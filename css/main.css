@@ -857,7 +857,6 @@ th {
 
 .section-title h2 {
   font-size: 42px;
- 
   margin-bottom: 20px;
 }
 
@@ -865,6 +864,9 @@ th {
   .section-title h2 {
     font-size: 30px;
     margin-bottom: 15px;
+  }
+  .section-title img {
+    display: none;
   }
 }
 
@@ -1095,11 +1097,14 @@ th {
   font-size: 12px;
   font-weight: 500;
   color: #3E2340;
-  padding: 20px;
+  padding: 6px 12px;
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 }
 
 .navbar-nav li a:hover {
   color: #7c32ff;
+  background-color: #f7d200;
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 }
 
 .navbar-nav .dropdown .dropdown-item {
@@ -1995,13 +2000,15 @@ th {
   background: rgba(0, 0, 0, 0.5);
 }
 
+
 .blog-post-area .single-blog-post .top-text {
   position: absolute;
   top: -30px;
   right: 30px;
-  background: #828bb2;
+  background: #8800ff;
   padding: 30px;
   text-align: center;
+  clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 }
 
 @media (min-width: 1921px) {
@@ -2080,17 +2087,7 @@ th {
   }
 }
 
-@media (min-width: 1921px) {
-  .blog-post-area .single-blog-post .text p {
-    display: none;
-  }
-}
 
-@media (max-width: 1199px) {
-  .blog-post-area .single-blog-post .text p {
-    display: none;
-  }
-}
 
 /* Start Courses Details Area css
 ============================================================================================ */
