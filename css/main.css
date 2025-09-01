@@ -816,12 +816,12 @@ th {
 }
 
 .section-gap {
-  padding: 120px 0;
+  padding: 10px 0;
 }
 
 @media (max-width: 991px) {
   .section-gap {
-    padding: 60px 0px;
+    padding: 10px 0px;
   }
 }
 
@@ -1103,8 +1103,8 @@ th {
 }
 
 .navbar-nav li a:hover {
-  color: #7c32ff;
-  background-color: #f7d200;
+  color: #f7d200;
+  background-color:  #7c32ff;
   clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 }
 
@@ -1161,9 +1161,17 @@ th {
   /* opcional, solo si quieres invertir horizontalmente */
 }
 
+@media (max-width: 768px) {
+  .divider-bottom svg {
+    height: 52px;
+    /* ajusta según necesites */
+  }
+}
+
 .divider-bottom .shape-fill {
   fill: #FFFFFF;
 }
+
 
 
 .home-banner-area {
@@ -1590,6 +1598,8 @@ th {
   transform: rotateY(180deg);
 }
 
+
+
 .divider-beneficios-top .shape-fill {
   fill: #ffffff;
 }
@@ -1614,7 +1624,7 @@ th {
 
 @media (max-width: 767px) {
   .divider-beneficios-bottom svg {
-    height: 80px;
+    height: 70px;
   }
 }
 
@@ -1706,9 +1716,6 @@ th {
 
 /* End Video Area
 =========================================================================================== */
-.other-feature-area .section-title p,
-.blog-post-area .section-title p {}
-
 .other-feature-area {
   padding-top: 50px;
 }
@@ -1729,14 +1736,15 @@ th {
 
 .other-feature-item {
   text-align: center;
-  padding: 50px 40px;
-  background: #B299FA;
+  padding: 30px 30px;
+  background: #bb69f6;
   margin-bottom: 35px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 
 @media (max-width: 1024px) {
   .other-feature-item {
@@ -1771,6 +1779,10 @@ th {
 
 .other-feature-item:hover i {
   color: #7c32ff;
+}
+
+.other-feature-item:hover p {
+  color:rgb(80, 80, 80) !important;
 }
 
 .other-feature-item:hover .top-text {
@@ -2022,7 +2034,7 @@ th {
   background-image: linear-gradient(69.2deg, rgba(77, 143, 251, 1) 35.3%, rgba(202, 51, 255, 1) 100.3%);
 }
 
-.blog-post-area .other-feature-item .top-text {
+.blog-post-area  .top-text {
   position: absolute;
   top: -30px; /* ajusta según quieras separarlo de la imagen */
   left: 50%;
@@ -2033,6 +2045,10 @@ th {
   clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
   color: #fff;
   z-index: 2;
+}
+
+.blog-post-area  .top-text p{
+  margin-bottom: 0%;
 }
 
 /* Opcional: ajustar top en pantallas muy grandes */
@@ -2048,6 +2064,9 @@ th {
   text-transform: uppercase;
 }
 
+.top-text{
+  color: #411986;
+}
 
 .blog-post-area .single-blog-post .text {
   position: absolute;
@@ -2084,6 +2103,8 @@ th {
   clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
    transition: all 0.5s ease;
 }
+
+
 
 
 
